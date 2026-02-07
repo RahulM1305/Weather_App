@@ -21,6 +21,7 @@ class WeatherScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //main card
             SizedBox(
@@ -30,7 +31,7 @@ class WeatherScreen extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ),
-                child: ClipRRect( 
+                child: ClipRRect(
                   borderRadius: BorderRadius.circular(16),
                   child: BackdropFilter(
                     filter: ImageFilter.blur(
@@ -71,6 +72,53 @@ class WeatherScreen extends StatelessWidget {
             ),
             const SizedBox(
               height: 20,
+            ),
+            Align(
+              alignment: AlignmentGeometry.centerLeft,
+              child: const Text(
+                'Weather Forecast',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Row(
+              children: [
+                SizedBox(
+                  width: 100,
+                  child: Card(
+                    elevation: 6,
+                    child: Container(
+                      padding: const EdgeInsets.all(8.0),
+                      decoration: BoxDecoration(),
+                      child: Column(
+                        children: [
+                          Text(
+                            '03.00',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          Icon(
+                            Icons.cloud,
+                            size: 32,
+                          ),
+
+                          const SizedBox(height: 8),
+
+                          Text(
+                            '320.12',
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
 
             //weather Forecast Card
