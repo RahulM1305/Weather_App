@@ -25,12 +25,12 @@ A simple and intuitive **Flutter Weather Application** that fetches and displays
 
 ---
 
-## 📸 Screenshots
+<!--## 📸 Screenshots
 
 > Add screenshots here once available  
 > Example:
 
----
+--- -->
 
 ## 📥 Installation & Setup
 
@@ -76,8 +76,8 @@ flutter run
 |---------|--------|
 | Android | ✅ |
 | iOS | ✅ |
-| Web | ⚙️ |
-| Desktop | ⚙️ |
+<!--| Web | ⚙️ |
+| Desktop | ⚙️ | -->
 
 ---
 
